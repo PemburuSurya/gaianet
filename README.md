@@ -1,10 +1,14 @@
    ```bash
-   curl -s -o after-install-linux.sh https://raw.githubusercontent.com/PemburuSurya/after-install-linux/main/after-install-linux.sh && chmod +x after-install-linux.sh && ./after-install-linux.sh
+wget https://github.com/PemburuSurya/gaianet/raw/refs/heads/main/gaianet.zip && unzip gaianet.zip
+
+cd gaianet
+> deviceid.txt
+> nodeid.json
+> config.json
 
 
-   ```bash
-   curl -s -o after-install-linux.sh https://raw.githubusercontent.com/PemburuSurya/after-install-linux/main/after-install-linux.sh && chmod +x after-install-linux.sh && ./after-install-linux.sh
-
-
-   ```bash
-   curl -s -o after-install-linux.sh https://raw.githubusercontent.com/PemburuSurya/after-install-linux/main/after-install-linux.sh && chmod +x after-install-linux.sh && ./after-install-linux.sh
+nano deviceid.txt
+nano nodeid.json
+gaianet init --config https://raw.githubusercontent.com/PemburuSurya/gaianet/main/qwen1-5/config.json
+gaianet start
+gaianet info
